@@ -17,7 +17,7 @@ services:
       - db
     image: wordpress:latest
     volumes:
-      - /Users/hominhtuan/Desktop/wp:/var/www/html
+      - /Users/hominhtuan/Desktop/wpDeployment/wpDeployment:/var/www/html
     ports:
       - "8000:80"
     restart: always
@@ -28,4 +28,3 @@ services:
       WORDPRESS_DB_NAME: wordpress
 volumes:
   db_data: {}
- 
